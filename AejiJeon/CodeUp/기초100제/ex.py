@@ -16,3 +16,7 @@ elif a == 'D':
     print("slowly~")
 else:
     print("what?")
+
+
+
+#checking
