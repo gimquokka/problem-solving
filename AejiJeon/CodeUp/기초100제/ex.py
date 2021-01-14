@@ -1,21 +1,10 @@
 # just exercise
-#a, b, c= input().split()
-a = input()
 
-#a = int(a)
-#b = int(b)
-#c = int(c)
+w, h, b = map(int, input().split())
 
-if a == 'A':
-    print("best!!!")
-elif a == 'B':
-    print("good!!")
-elif a == 'C':
-    print("run!")
-elif a == 'D':
-    print("slowly~")
-else:
-    print("what?")
+Mb = w*h*b / 2 ** 23
+
+print("%.2f MB" %Mb)
 
 
 
