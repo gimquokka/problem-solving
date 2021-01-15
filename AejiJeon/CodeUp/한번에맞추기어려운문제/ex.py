@@ -1,20 +1,19 @@
 import sys
-# input integer, string
-#a = input().split(" ")
-#print(a)
+
+if a1 == b1==1:
+    if int(f) <= k and int(t) >= k:
+        return 1
+    else:
+        return 0
 
 
-l = []
-for line in range(3):
-    l.append(int(sys.stdin.readline()))
+    if f == t:
 
-print(l)
-#a = sys.stdin.readline()
-
-#a = sys.stdin.readline().split()
-#print(a)
-
-#l = []
-#for line in sys.stdin.readline():
-#    l = line.sp
-
+        for i in range(l):
+            if t[i] == str(k): nums += 1
+        return nums
+    elif a1 == 1:
+        if int(f) <= k and int(t) >= k:
+            return 1
+        else:
+            return 0

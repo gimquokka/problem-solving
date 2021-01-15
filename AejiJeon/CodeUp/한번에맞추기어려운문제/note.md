@@ -23,3 +23,16 @@ int('453\n') : 453
 for i in dic : ... for i in dic.key(): ... for i in list(dic): ... 같은 표현
 
 {}은 set이 아니라 dictionary임
+
+# 2021.01.15 cu_2023~2050
+
+cu_2023 : 
+“”.join(l) l에는 string, list with strings, tuple with strings
+
+cu_2024 :
+삼항연산자 여러 개 중첩 가능 ex) 값1 if 조건1 else 값2 if 조건2 else 값3
+
+cu_2050: 
+a==b==c 다 같음
+a!=b!=c!=a 다 다름
+sys.stdin.readline().strip()  스트링으로 반환
