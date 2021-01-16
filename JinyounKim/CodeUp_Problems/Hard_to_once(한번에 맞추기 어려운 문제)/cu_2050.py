@@ -81,4 +81,3 @@ board = push_game(board, n, t)
 
 for i in range(n):
 	print(*board[i], sep = ' ')
-

@@ -1,2 +1,3 @@
-# problem_solving_algorithms
-My repo that is for saving PS history
+# Jinyoung Kim's Problem Solving history
+My profile: https://www.rocketpunch.com/@gimquokka
+
