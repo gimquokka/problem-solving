@@ -1,7 +1,8 @@
-# about a, b  both have same number of digit like 233~780
+# a<= <=b 3 6 9 clap count
+# with cu_3711
 
-a, b, k = input().split()
-k = int(k)
+a, b =input().split()
+
 
 def sdig(f, t):
 
@@ -12,6 +13,7 @@ def sdig(f, t):
             return 0
     nums = 0
     l = len(f)
+
 
     for i in range(l):
         x = int(f[l - 1])
@@ -41,13 +43,19 @@ def sdig(f, t):
 a1 = len(a)
 b1 = len(b)
 s = b1 - a1
-result = 0
-if s != 0:
-    for i in range(s + 1):
-        if i == 0: result += sdig(a, str(10**a1 - 1))
-        elif i == s: result += sdig(str(10**(b1 - 1)), b)
-        else: result += sdig(str(10**(a1 + i - 1)), str(10**(a1 + i) - 1))
 
-else: result = sdig(a, b)
+count = 0
+for k in [3, 6, 9]:
+    result = 0
+    if s != 0:
+        for i in range(s + 1):
+            if i == 0: result += sdig(a, str(10**a1 - 1))
+            elif i == s: result += sdig(str(10**(b1 - 1)), b)
+            else: result += sdig(str(10**(a1 + i - 1)), str(10**(a1 + i) - 1))
 
-print(result)
+    else: result = sdig(a, b)
+    count += result
+
+
+print(count)
+
