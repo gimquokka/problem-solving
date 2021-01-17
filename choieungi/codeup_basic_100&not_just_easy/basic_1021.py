@@ -1,0 +1,7 @@
+a = input("")
+print(a)
+
+
+
+
+

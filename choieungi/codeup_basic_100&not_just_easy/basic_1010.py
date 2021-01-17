@@ -1,0 +1,4 @@
+print(int(input("")))
+
+
+

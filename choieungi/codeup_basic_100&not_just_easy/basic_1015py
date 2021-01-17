@@ -1,0 +1,4 @@
+a = float(input(""))
+print("%.2f" %a)
+#python에서 float형 반올림은 %.x 자리까지 올린다.
+
