@@ -4,11 +4,11 @@
 - Priority Queue를 이용한 Dijkstra Algorithm : 간단히 O(ElogV)
 
 # 몰랐던 python 기능들
-'''python
+'''python  
 import sys
 input = sys.stdin.readline.rstrip() #치환하여 사용
 
-n, m = map(int, input().split())
+n, m = map(int, input().split())  
 '''
 
 PriorityQueue and heapq(speed 더 빠름) libraries in python
