@@ -1,14 +1,15 @@
 # 개념 짚고 넘어가기
-- greedy, DP -> 최단 경로 알고리즘에 그대로 적용됨
+- greedy, DP -> 최단 경로 알고리즘에 그대로 적용됨(각각 dijkstra, Floyd-Warshall)
 - heap data structure : priority queue를 구현하기 위해 사용하는 자료구조 중 하나 
 - Priority Queue를 이용한 Dijkstra Algorithm : 간단히 O(ElogV)
+- Floyd-Warshall Algorithm : O(n^3), vertex 수(n)의 범위가 백단위 정도로 한정적일 때 사용 가능  
 
 # 몰랐던 python 기능들
-''' python  
+'''python
 import sys
 input = sys.stdin.readline.rstrip() #치환하여 사용
 
-n, m = map(int, input().split())  
+n, m = map(int, input().split())
 '''
 
 PriorityQueue and heapq(speed 더 빠름) libraries in python
