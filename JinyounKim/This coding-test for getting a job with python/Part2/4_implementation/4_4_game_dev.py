@@ -25,7 +25,7 @@ turn_cont = 0
 
 while True:
 	turn_left()
-	# print('check')
+
 	nx = x + dx[direction]
 	ny = y + dy[direction]
 	if (visited_arr[nx][ny] == 0) and (map_arr[nx][ny] == 0):
