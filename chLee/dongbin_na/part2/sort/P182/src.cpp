@@ -21,8 +21,8 @@ int main() {
         b.push_back(tmp);
     }
 
-    sort(a.begin(), a.end());
-    sort(b.begin(), b.end(), greater<>());
+    sort(a.begin(), a.end()); //오름차순
+    sort(b.begin(), b.end(), greater<>()); //내림차순
 
     for (int i=0; i<k; i++) {
         if (a[i] > b[i]) {
