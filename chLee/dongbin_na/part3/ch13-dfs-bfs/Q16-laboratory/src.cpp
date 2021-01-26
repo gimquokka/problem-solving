@@ -81,6 +81,8 @@ int main() {
             }
         }
         result = max(result, safe_zone);
+    //dfs대신 permutaition함수 사용
+    //ex. 1 2 3 4-> 1 2 4 3 -> 1 3 2 4 -> 1 3 4 2 
     } while(prev_permutation(sel_wall.begin(), sel_wall.end()));
 
     cout << result << endl;
