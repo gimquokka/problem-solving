@@ -1,8 +1,8 @@
-## 병사 배치하기(dp)
-# 문제 요약
+# 병사 배치하기(dynamic programming)
+## 문제 요약
 - n개 숫자 -> 내림차순 형태가 되는 가장 긴 부분 수열 찾기
 
-# 아이디어
+## 아이디어
 - dp문제에서 자주 등장하는 LIS(Longest Increasing Subsequence) '가장 긴 증가하는 부분 수열' 아이디어와 동일  
   
 D[i] = array[j]를 마지막 원소로 가지는 부분 수열의 최대 길이
