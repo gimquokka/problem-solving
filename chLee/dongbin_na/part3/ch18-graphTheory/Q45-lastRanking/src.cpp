@@ -23,8 +23,10 @@ int main() {
         for (int g=1; g<n+1; g++) {
             cin >> grade[g];
         }
+        
+        //모든 상대순위를 표기할 인접 행렬
         vector<vector<int>> A(n+1, vector<int>(n+1,0)); //A[i][j] = 1 : i->j
-        vector<int> ind(n+1);
+        vector<int> ind(n+1); //indegree 배열
         for (int i=1; i<n+1; i++) {
             int t = grade[i];
             for (int j=i+1; j<n+1; j++) {
@@ -34,7 +36,6 @@ int main() {
         }
 
         //아래 정보를 바탕으로 directed그래프 수정하기
-        //indegree배열도 만들자
         int m;
         cin >> m;
         for (int i=0; i<m; i++) {
@@ -53,7 +54,7 @@ int main() {
             }
         }
 
-        //위상 정렬
+        //위상 정렬 O(N^2)
         //중간에 0이 안나오면 IMPOSSIBLE출력
         int cnt = 0;
         bool flag = true;
@@ -87,6 +88,7 @@ int main() {
         }
 
         //출력
+        //result크기가 n이 아니면, 모든 노드를 포함하지 못한것 이므로 cycle이 있는 것!!
         if (result.size() == n) {
             for (auto v : result) {
                 cout << v << " ";
