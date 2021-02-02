@@ -54,7 +54,7 @@ int main() {
             }
         }
 
-        //위상 정렬 O(N^2)
+        //위상 정렬 O(n + E)
         //중간에 0이 안나오면 IMPOSSIBLE출력
         int cnt = 0;
         bool flag = true;
