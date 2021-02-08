@@ -6,7 +6,7 @@ n = int(input())
 a = list(map(int, input().split()))
 
 a.sort()
-
+# 최소한의 인원이 그룹으로 포함될 때 최대의 그룹이 나온다.
 cont = 0
 result = 0
 for i in a:
