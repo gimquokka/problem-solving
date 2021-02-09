@@ -20,10 +20,7 @@ find_LIS(n, data, right_dp)
 right_dp.reverse()
 
 ans = 0
-
 for i in range(n):
     ans = max(ans, right_dp[i]+left_dp[i]-1)
 
-# print(right_dp)
-# print(left_dp)
 print(ans)
