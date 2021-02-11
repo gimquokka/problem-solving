@@ -52,7 +52,7 @@ for i in range(1, l-1):
     pre = lucky[i-1]
     s = lucky[i]
     e = lucky[i+1]
-    for gap in range(-1,-101, -1):
+    for gap in range(-1, -101, -1):
         m = s+gap
         if (m <= pre) or (m in m_set):
             break
@@ -88,5 +88,4 @@ ans = []
 for i in range(n):
     ans.append(heapq.heappop(q)[1])
 
-print(*ans, sep = ' ')
-
+print(*ans, sep=' ')
