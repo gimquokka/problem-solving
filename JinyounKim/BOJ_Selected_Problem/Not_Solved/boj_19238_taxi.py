@@ -1,3 +1,18 @@
+"""
+### Strategy ###
+1. 각 파트별로 완성 후 동작여부를 확인함 => 디버깅 시간 확실히 감소
+2. BFS의 특성(가까운 거리별 탐색)을 활용하여 가장 가까운 승객을 O(N*2)으로 찾아냄
+3. edge case 확인
+    (1) 택시 승객 같은 위치 (2) 승객위치 목적지 같은 위치(세상에 이런 승객이 어디있음 -,-)
+4. BFS를 mode와 같은 변수를 이용하여 한번만 짤 수도 있겠지만 스스로 와 닿지 않아서 (1) 승객을 찾는것과, (2) 목적지까지 이동 나눠서 짬
+
+### Time Complexity ###
+find_client => Max: O(n^2), Tot: O(N^2)
+move_to_dest => O(N^2)
+
+=> O(N^2+M*N^2)
+"""
+
 import sys
 import heapq
 from collections import deque
