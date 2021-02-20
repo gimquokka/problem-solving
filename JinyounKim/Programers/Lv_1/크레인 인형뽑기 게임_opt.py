@@ -12,13 +12,19 @@ def solution(board, moves):
                 if len(stacklist) > 1:
                     # 이렇게 -1을 이용하면 stacklist의 길이를 잴 필요가 없음
                     if stacklist[-1] == stacklist[-2]:
+                        # Stack을 이용한 정확성 이해가 중요
                         stacklist.pop(-1)
                         stacklist.pop(-1)
                         answer += 2
                 break
 
     return answer
+"""
+1000만 => 40mb
 
+collections
+c++
+"""
 
 """
 와 이 코드는 진짜 사기다...

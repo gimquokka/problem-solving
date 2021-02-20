@@ -6,7 +6,6 @@ bucket에 넣고, 순회하면서 cnt += 1
 
 
 def solution(board, moves):
-
     size = len(board)
     bucket = []
     len_bucket = 0
@@ -23,8 +22,10 @@ def solution(board, moves):
 
     i = 0
     answer = 0
+    # while
+    # (len_bucket//2+1)
     for _ in range(int(len_bucket//2+1)):
-        for j in range(0, len_bucket-1):
+        for j in range(i, len_bucket-1):
             if bucket[j] == bucket[j+1]:
                 del bucket[j:j+2]
                 i = j-2
@@ -33,3 +34,5 @@ def solution(board, moves):
                 break
 
     return answer
+
+# 1, 2, 2, 1 => 1, 1 => x
