@@ -35,3 +35,13 @@ def solution(n, lost, reserve):
             lost.remove(a)
 
     return n - len(_lost)
+
+
+a = [1, 2, 3, 4, 5]
+b = [1, 2, 7, 8, 9]
+for res in a:
+    print(res)
+    if res in b:
+        b.remove(res)
+        a.remove(res)
+print(a, b)
