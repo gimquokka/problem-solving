@@ -1,9 +1,7 @@
 def solution(n, lost, reserve):
-    # 왜 여기다가 놓으면 오답지??
-    # lost.sort()
-    # reserve.sort()
     '''
     # 제한사항 5번 고려
+    # 주의사항: 이렇게 for문 돌리면서 원소 지우면 정상동작하지 않음
     for res in reserve:
         if res in lost:
             lost.remove(res)
