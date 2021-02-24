@@ -8,16 +8,16 @@ O(NloglogN)
 
 # 주의 사항
 - x 값이 클 경우 메모리를 많이 차지 함으로 주의!
-""" 
+"""
 import math
 
-n = 1000 # 2 부터 1000까지의 모든 수에 대하여 소수 판별
-d = [True for i in range(n+1)] # 모든 수 소수로 초기화
-d[0], d[1] = False, False # 1은 소수가 아님으로
-
-# 에라토스테네스의 체 알고리즘 
-for i in range(2, int(math.sqrt(n))+1): # x의 제곱근까지만 판별하면 됨
-    if d[i] == True: # i가 소수인 경우(남은 수인 경우)
+n = 1000  # 2 부터 1000까지의 모든 수에 대하여 소수 판별
+d = [True for i in range(n+1)]  # 모든 수 소수로 초기화
+d[0], d[1] = False, False  # 1은 소수가 아님으로
+# 15mb
+# 에라토스테네스의 체 알고리즘
+for i in range(2, int(math.sqrt(n))+1):  # x의 제곱근까지만 판별하면 됨
+    if d[i] == True:  # i가 소수인 경우(남은 수인 경우)
         # i를 제외한 i의 모든 배수를 지우기
         j = 2
         while i*j <= n:
@@ -33,7 +33,8 @@ def solution(n):
 
     for i in range(2,int(n**0.5)+1):
         if i in num:
-            num-=set(range(i*i,n+1,i))
+            num -= set(range(i*i,n+1,i))
+            # 메모리 반환이 안됨
     # 소수의 개수 반환
     return len(num)
 """

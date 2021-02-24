@@ -21,16 +21,17 @@
     s.isalpha()  # 문자열의 구성이 알파벳인지 확인하여 True or False 반환
     s.isdigit()  # 문자열의 구성이 숫자인지 확인하여 True or False를 반환
     s.isalnum  # 문자열의 구성이 숫자 혹은 문자인지 확인하여 True or False를 반환 
-    # 단, 위 세 함수는 띄어쓰기 등이 포함되어 있으면 False를 Return함
-
-    문자열에는 s.sort()가 없다. sorted(s)를 활용해야함
-
+    
+ \# *단, 위 세 함수는 띄어쓰기 등이 포함되어 있으면 False를 Return함*
+    
+문자열에는 s.sort()가 없다. sorted(s)를 활용해야함
+    
+    
+    
 6. list 함수 정리
     l.count(arg) # list 내의 arg의 개수를 반환함
 
-
-
-6. import math 사용법 정리
+7. import math 사용법 정리
     math.sqrt(arg) # arg의 제곱근을 반환
 
 
