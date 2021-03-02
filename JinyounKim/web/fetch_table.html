@@ -1,0 +1,20 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Employee Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+            <script>
+                fetch("http://dummy.restapiexample.com/api/v1/employees")
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data)
+                    })
+            </script>
+        </tbody>
+    </table>
+</div>

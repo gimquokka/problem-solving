@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fetch-Api</title>
+</head>
+
+<body>
+    <button onclick="getUser()">Hello Fetch-api</button>
+    <button onclick="removeUser()">remove element</button>
+    <div id='userInfo'></div>
+    <script>
+        i = 0
+        function getUser() {
+            fetch("https://randomuser.me/api/")
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.results[0]);
+                    data = data.results[0];
+                    i += 1
+                    const name = document.createElement('div');
+                    const email = document.createElement('div');
+                    const phone = document.createElement('div');
+                    const br = document.createElement('br');
+                    name.textContent = data.name.first + " " + data.name.last;
+                    email.textContent = data.email;
+                    phone.textContent = data.phone;
+                    const upper = document.createElement('div');
+                    const userInfo = document.getElementById("userInfo");
+                    upper.appendChild(name);
+                    upper.appendChild(email);
+                    upper.appendChild(phone);
+                    upper.appendChild(br);
+                    upper.id = i
+                    userInfo.appendChild(upper)
+                })
+        }
+        function removeUser() {
+            const div = document.getElementById(i);
+            div.remove();
+            i -= 1
+        }
+    </script>
+</body>
+
+</html>
