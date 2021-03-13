@@ -64,7 +64,7 @@ for tc in range(int(input())):
         if len(q) > 1:
             ambiguous = True
             break
-        now = q.popleft()
+        now = q.pop()
         rank.append(now)
         # now => i를 순회하며 indegree가 0이 되는 값 q에 삽입
         for i in range(1, n+1):

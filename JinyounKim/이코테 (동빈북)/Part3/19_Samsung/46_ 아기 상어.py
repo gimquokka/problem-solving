@@ -92,9 +92,8 @@ while True:
 
     # 먹은 물고기가 상어의 사이즈와 같다면
     if eaten_cnt == shack_size:
-        # 상어 사이즈 up
+        # 상어 사이즈 up 및 먹은 물고기 개수 초기화
         shack_size += 1
-        # 먹은 물고기 개수 초기화
         eaten_cnt = 0
 
     # 총거리에 움직인 거리 및 이동 좌표 반영
