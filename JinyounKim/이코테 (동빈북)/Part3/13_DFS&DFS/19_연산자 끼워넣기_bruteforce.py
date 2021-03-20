@@ -10,9 +10,9 @@ for idx, cnt in enumerate(oper_cnt):
     for _ in range(cnt):
         operators.append(idx)
 
-max_ans = 0
-min_ans = int(1e10)
-for cases in permutations(operators):
+max_ans = -int(1e11)
+min_ans = int(1e11)
+for cases in set(permutations(operators)):
     result = data[0]
     for idx, op in enumerate(cases):
         if op == 0:
