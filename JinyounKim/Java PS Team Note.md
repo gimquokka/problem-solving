@@ -11,4 +11,10 @@
   gcd = BigInteger.valuOf(a).gcd(BigInteger.valuoOf(b)).intValue();
   ```
 
-- ?
+- 문자열 복사
+
+```java
+Optional<String> result = Stream.generate(() -> "*").limit(i%(n+1)).reduce((a, b) -> a + b);
+            System.out.println(result.get()) ;
+```
+
