@@ -67,7 +67,7 @@ class Solution {
         // 정답 값 반환: 여기서 int/int => int임으로 소수점 알아서 절사!
         return ans/cnt;
     }
-    /*
+
     @Test
     public void 정답() {
         int[][] input = {{0, 3}, {1, 9}, {2, 6}};
@@ -78,5 +78,5 @@ class Solution {
         ans = 12;
         assertEquals(ans, solution(input));
     }
-     */
+
 }
