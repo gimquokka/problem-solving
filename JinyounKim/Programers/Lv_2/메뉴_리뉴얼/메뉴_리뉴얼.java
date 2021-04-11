@@ -70,7 +70,7 @@ class Solution {
             dfs(arr, i, length + 1, course, str + String.valueOf(arr[i]));
         }
     }
-
+/*
     @Test
     void 정답() {
         String[] orders = {"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
@@ -88,4 +88,5 @@ class Solution {
         ans = new String[]{"WX", "XY"};
         assertArrayEquals(ans, solution(orders, course));
     }
+ */
 }

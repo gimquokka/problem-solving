@@ -82,3 +82,27 @@ String[] values = {"AB","BC","CD","AE"};
 boolean contains = Arrays.stream(values).anyMatch(x -> x == equals);
 ```
 
+- 자바에서는 파이썬과 같이 "String" == "String"을 하면 안됨
+
+```java
+// 객체는 그냥 부르면 주소 값을 뱉음으로 == 비교 불가능
+(X) "String" == "String"
+
+// 아래와 같이 String의 내부 method를 활용하여 비교를 수행하여야함
+"String".equals("String")
+```
+
+- DFS 사용시 visited 사용 Pattern
+
+```java
+        for (int i = 0; i < words.length; i++) {
+            if (!visited[i] && check(begin, words[i])) {
+                //해당 DFS로 진입할 때 visited 처리
+              	visited[i] = true;
+                dfs(words, words[i], target, cnt + 1);
+                // 다음 차례의 dfs의 경로는 해당 node를 다시 방문해야할 수 있음으로 방문 기록 지워줘야함
+                visited[i] = false;
+            }
+        }
+```
+
