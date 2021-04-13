@@ -70,6 +70,11 @@ class Solution {
             dfs(arr, i, length + 1, course, str + String.valueOf(arr[i]));
         }
     }
+
+    [a, b, c, d]
+    => ab, ab, ad
+    => bc, bd,
+    => cd
 /*
     @Test
     void 정답() {

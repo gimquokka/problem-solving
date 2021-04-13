@@ -106,3 +106,34 @@ boolean contains = Arrays.stream(values).anyMatch(x -> x == equals);
         }
 ```
 
+- Fibonacci 제귀함수 구현 Best Practice
+
+```java
+import java.util.Scanner;
+
+public class Quiz11_04 {
+    static int n;
+    static int arr[];
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+				
+      	// n 받아서, 여기까지의 피보나치 수 구하여랴!
+        n = sc.nextInt();
+        arr = new int[n+1];
+
+        arr[1] = 1;
+        arr[2] = 2;
+
+        f(n);
+
+        System.out.println(arr[n]);
+    }
+
+    private static int f(int n) {
+        if (arr[n] == 0) return arr[n] = f(n - 1) + f(n - 2);
+        return arr[n];
+    }
+}
+```
+
