@@ -10,8 +10,6 @@ dy = [0, -1, 1, 0]
 
 def DFS(x, y):
     graph[x][y] = 1 # visited
-
-      
     for k in range(4):
         nx = x + dx[k]
         ny = y + dy[k]
@@ -19,9 +17,6 @@ def DFS(x, y):
             if  graph[nx][ny] == 0: # not visited
                 DFS(nx, ny)
             
-    
-        
-
 count = 0
 for i in range(n):
     for j in range(m):
