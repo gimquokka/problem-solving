@@ -31,18 +31,7 @@ class rectangle {
 
 class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        rectangle a = new rectangle(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
-//        System.out.printf("%d %d %d %d \n", a.ld_x, a.ld_y, a.ru_x, a.ru_y);
-        rectangle b = new rectangle(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
-//        System.out.printf("%d %d %d %d \n", b.ld_x, b.ld_y, b.ru_x, b.ru_y);
-
-        rectangle c = new rectangle();
-
-        a.setUnion(a, b);
-//        System.out.printf("%d %d %d %d", a.ld_x, a.ld_y, a.ru_x, c.ru_y);
-
-        a.out();
+        char c = 'a';
+        c = c + 1;
     }
 }
