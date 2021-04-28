@@ -157,3 +157,29 @@ public static int binarySearch(int[] list, int key){
 }
 ```
 
+- Queue
+
+```java
+// 라이브러리 import
+import java.util.LinkedList;
+import java.util.Queue;
+
+// LinkedList를 활용하여 Queue 초기화
+Queue<Integer> q = new LinkedList<>(); // Integer 말고도 다른 DataType Generic으로 사용가능
+
+// 삽입 (Create)
+q.add(1); // 삽입에 성공시 true, 실패하였을 경우 Exception 반환 
+q.offer(2); // 삽입에 성공시 true, 실패하였을 경우 false 반환 
+
+// 참조 (Read)
+queue.peek(); // Queue의 첫번째 값 참조
+
+// 반환 (Read and Delete)
+q.poll(); // Queue의 첫번째 값을 반환. 비어있다면 null 반환
+
+
+// 제거 (Delete)
+q.remove(); // Queue의 첫번째 값 제거
+q.clear(); // Queue의 값 초기화
+```
+
