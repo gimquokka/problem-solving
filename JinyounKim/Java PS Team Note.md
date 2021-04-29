@@ -177,9 +177,8 @@ queue.peek(); // Queue의 첫번째 값 참조
 // 반환 (Read and Delete)
 q.poll(); // Queue의 첫번째 값을 반환. 비어있다면 null 반환
 
-
 // 제거 (Delete)
 q.remove(); // Queue의 첫번째 값 제거
-q.clear(); // Queue의 값 초기화
+q.clear(); // Queue의 값 전체 초기화
 ```
 
