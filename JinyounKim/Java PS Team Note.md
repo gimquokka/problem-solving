@@ -182,3 +182,10 @@ q.remove(); // Queue의 첫번째 값 제거
 q.clear(); // Queue의 값 전체 초기화
 ```
 
+- 좌우로 모두 접근 가능 할 때 특정 알파벳과의 거리
+
+```java
+String str = "string";
+dist = Math.min(str.charAt(i) - 'A', 'Z'- str.charAt(i) + 1);
+```
+
