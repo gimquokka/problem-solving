@@ -201,3 +201,10 @@ Integer.parseInt("2018", 10); // 2018
 Double.parseDouble("1.111") // 1.111
 ```
 
+- String parsing examples
+
+```java
+substring
+split("")
+```
+
