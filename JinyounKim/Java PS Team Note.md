@@ -14,8 +14,11 @@
 - 문자열 복사
 
 ```java
+// Python의 "*"*n와 같음
 Optional<String> result = Stream.generate(() -> "*").limit(i%(n+1)).reduce((a, b) -> a + b);
             System.out.println(result.get()) ;
+
+Stream.generate(() -> "*").limit(n).reduce((a, b) -> a + b);
 ```
 
 - Char array => String

@@ -1,3 +1,6 @@
+/*
+출처: https://velog.io/@hyeon930/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%B6%94%EC%84%9D-%ED%8A%B8%EB%9E%98%ED%94%BD-Java
+ */
 class Solution1 {
     public int solution(String[] lines) {
         int answer = 0;

@@ -10,3 +10,5 @@ for i in permutations(data, 2):
 # 조합 (Combinations)
 for i in combinations(data, 2):
     print(i)
+
+ans = sum(sum(combinations(data, 2)))
