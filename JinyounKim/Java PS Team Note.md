@@ -14,8 +14,11 @@
 - 문자열 복사
 
 ```java
+// Python의 "*"*n와 같음
 Optional<String> result = Stream.generate(() -> "*").limit(i%(n+1)).reduce((a, b) -> a + b);
             System.out.println(result.get()) ;
+
+Stream.generate(() -> "*").limit(n).reduce((a, b) -> a + b);
 ```
 
 - Char array => String
@@ -187,5 +190,24 @@ q.clear(); // Queue의 값 전체 초기화
 ```java
 String str = "string";
 dist = Math.min(str.charAt(i) - 'A', 'Z'- str.charAt(i) + 1);
+```
+
+- Covert Sting to integer, or double
+
+```java
+// Integer.parseInt("number", base)
+// number가 base 진수로 되어 있다고 생각하고 10진수로 변환
+Integer.parseInt("2018", 10); // 2018
+Integer.parseInt("2018", 10); // 2018
+
+// Double도 위와 같음
+Double.parseDouble("1.111") // 1.111
+```
+
+- String parsing examples
+
+```java
+substring
+split("")
 ```
 

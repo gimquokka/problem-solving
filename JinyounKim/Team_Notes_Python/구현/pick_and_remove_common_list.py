@@ -8,3 +8,7 @@ def solution(numbers):
     answer = list(tmp)
     answer.sort()
     return answer
+
+# arr = [1, 2, 3, 1]
+# arr = list(set(arr))
+# print(arr)
