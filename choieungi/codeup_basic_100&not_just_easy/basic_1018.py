@@ -1,4 +1,0 @@
-a = input("")
-print(a)
-
-
