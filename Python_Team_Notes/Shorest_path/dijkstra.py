@@ -23,7 +23,7 @@ for _ in range(m):
     graph[a].append((b, c))
 
 
-def dijkstart(start):
+def dijkstra(start):
     q = []
     # 시작 노드 최단 경로 0으로 설정, 큐 삽입
     heapq.heappush(q, (0, start))
