@@ -13,7 +13,6 @@ def solution(n, edge):
     dijkstra(graph, distance, 1)
 
     distance.sort(reverse=True)
-
     '''
     # list method count로 대체 가능
     max_dist = distance[1]
@@ -21,8 +20,10 @@ def solution(n, edge):
         if max_dist == dist:
             ans += 1
     '''
+    print(distance)
 
-    return distance.count(distance[1])
+    # return distance.count(distance[1])
+    return distance.count(max(distance[1:]))
 
 
 def dijkstra(graph, distance, start):

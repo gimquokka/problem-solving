@@ -1,5 +1,5 @@
 def solution(numbers, target):
-    global ans, arr, num
+    global ans
     
     # arr = numbers
     # num =  target 
@@ -10,7 +10,7 @@ def solution(numbers, target):
 
 
 def dfs(numbers, target, _sum, idx):
-    global ans, arr, num
+    global ans
     
     if idx == len(numbers):
         if _sum == target:
