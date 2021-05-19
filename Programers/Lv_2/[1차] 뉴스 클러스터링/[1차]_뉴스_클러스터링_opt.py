@@ -15,3 +15,4 @@ def solution(str1, str2):
     hap_sum = sum([max(str1.count(hh), str2.count(hh)) for hh in hap])
 
     return math.floor((gyo_sum/hap_sum)*65536)
+
