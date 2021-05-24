@@ -13,7 +13,7 @@ def solution(str1, str2):
     inter_num = sum([min(str1.count(k), str2.count(k)) for k in inter_key])
     union_num = sum([max(str1.count(k), str2.count(k)) for k in union_key])
     
-    return int(inter_num/union_num*65536)
+    return int((inter_num/union_num)*65536)
     
 
 str1, str2 = "aa1+aa2", "AAAA12"
