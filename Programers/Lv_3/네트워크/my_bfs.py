@@ -18,7 +18,12 @@ def bfs(computers, visited, start):
     q.append(start)
     visited[start] = 1
     
-    while q:
+    # while q:
+    for i in range(2*n):
+        
+        if not q:
+            break
+        
         now = q.popleft()
         for idx, connected in enumerate(computers[now]):
             if idx == now:
