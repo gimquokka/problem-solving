@@ -1,6 +1,6 @@
 package stackpkg;
 
-public class FixedStack implements IfCharStack {
+public class FixedStack implements IfCharStack{
     private char s[]; // 스택 문자 데이터를 담고있는 배열
     private int toploc; // 삽입과 삭제가 발생하는 스택 top을 가르킴.
                         // 즉, 저장된 문자 데이터의 개 수 정보를 갖는 변수

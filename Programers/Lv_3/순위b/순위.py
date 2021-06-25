@@ -27,9 +27,6 @@ def solution(n, results):
                 cnt += 1
             if cnt == n:
                 ans += 1
-                
-    # for row in graph:
-    #     print(*row)
 
     return ans
 

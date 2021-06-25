@@ -38,7 +38,6 @@ def solution(n, t, m, timetable):
                     break
                 cnt += 1
             if cnt < m:
-                print("check")
                 return mtime_to_hhmm(dept_time) 
         
         cnt = 0
@@ -55,20 +54,20 @@ def solution(n, t, m, timetable):
                 break
         
 
-# timetable = ["08:00", "08:01", "08:02", "08:03"]
-# print(solution(1, 1, 5, timetable))
+timetable = ["08:00", "08:01", "08:02", "08:03"]
+print(solution(1, 1, 5, timetable))
 
-# timetable = ["09:10", "09:09", "08:00"]
-# print(solution(2, 10, 2, timetable))
+timetable = ["09:10", "09:09", "08:00"]
+print(solution(2, 10, 2, timetable))
 
 timetable = ["09:00", "09:00", "09:00", "09:00"]
 print(solution(2, 1, 2, timetable))
 
-# timetable = ["00:01", "00:01", "00:01", "00:01", "00:01"]
-# print(solution(1, 1, 5, timetable))
+timetable = ["00:01", "00:01", "00:01", "00:01", "00:01"]
+print(solution(1, 1, 5, timetable))
 
-# timetable = ["23:59"]
-# print(solution(1, 1, 1, timetable))
+timetable = ["23:59"]
+print(solution(1, 1, 1, timetable))
 
-# timetable =["23:59","23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59"]
-# print(solution(10, 60, 45, timetable))
+timetable =["23:59","23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59"]
+print(solution(10, 60, 45, timetable))

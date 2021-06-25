@@ -71,11 +71,11 @@ class Solution {
         }
     }
 
+/*
     [a, b, c, d]
     => ab, ab, ad
     => bc, bd,
     => cd
-/*
     @Test
     void 정답() {
         String[] orders = {"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
