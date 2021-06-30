@@ -22,24 +22,23 @@ def solution(key, lock):
         key_length = len(key)
         new_lock = [[0]*3*length for _ in range(3*length)]
 
-    # print(new_lock)
         for i in range(length, 2*length):
             for j in range(length, 2*length):
                 new_lock[i][j] = lock[i-length][j-length]
                 
         
         for x in range(3*length-key_length+1):
-            for y in range(3*length-key_length+1):
+            for y in range(3*length - key_length+1):
                 
-                for dx in range(length): 
-                    for dy in range(length):
+                for dx in range(key_length): 
+                    for dy in range(key_length):
                         new_lock[x+dx][y+dy] += key[dx][dy]
                 
                 if check(length, new_lock):
                     return True
                 
-                for dx in range(length): 
-                    for dy in range(length):
+                for dx in range(key_length): 
+                    for dy in range(key_length):
                         new_lock[x+dx][y+dy] -= key[dx][dy]
     return False
             
